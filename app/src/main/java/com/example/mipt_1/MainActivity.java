@@ -1,6 +1,5 @@
 package com.example.mipt_1;
 
-import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,15 +19,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 TextView textView = findViewById(R.id.txtView);
                 textView.setText("It's been pressed!");
-            }
-        });
-
-        Button button2 = findViewById(R.id.btnChangeColor);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TextView textView = findViewById(R.id.txtView);
-                textView.setTextColor(Color.RED);
             }
         });
     }
